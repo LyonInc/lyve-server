@@ -1,0 +1,67 @@
+{
+  "name": "event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "timeStart": {
+      "type": "number",
+      "required": true
+    },
+    "timeEnd": {
+      "type": "number",
+      "required": true
+    },
+    "isLive": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "chatPath": {
+      "type": "string",
+      "required": true
+    },
+    "imgHeaderPath": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "channel": {
+      "type": "belongsTo",
+      "model": "channel",
+      "foreignKey": "channelId"
+    },
+    "categories": {
+      "type": "hasMany",
+      "model": "category",
+      "foreignKey": "categoryId",
+      "through": "eventcategory"
+    },
+    "streams": {
+      "type": "hasMany",
+      "model": "stream",
+      "foreignKey": "streamId"
+    },
+    "eventattachments": {
+      "type": "hasMany",
+      "model": "eventattachment",
+      "foreignKey": "eventAttachmentId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

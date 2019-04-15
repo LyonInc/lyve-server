@@ -1,0 +1,35 @@
+{
+  "name": "stream",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "timeStart": {
+      "type": "number",
+      "required": true
+    },
+    "timeEnd": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "streamattachments": {
+      "type": "hasMany",
+      "model": "streamattachment",
+      "foreignKey": "streamAttachmentId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

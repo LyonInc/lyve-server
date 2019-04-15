@@ -1,0 +1,85 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "user": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "user",
+        "foreignKey": "userId"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "event": {
+    "dataSource": "db",
+    "public": true
+  },
+  "channel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "profile": {
+    "dataSource": "db",
+    "public": true
+  },
+  "poster": {
+    "dataSource": "db",
+    "public": true
+  },
+  "eventattachment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "stream": {
+    "dataSource": "db",
+    "public": true
+  },
+  "streamattachment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "category": {
+    "dataSource": "db",
+    "public": true
+  },
+  "eventcategory": {
+    "dataSource": "db",
+    "public": false
+  },
+  "subscriber": {
+    "dataSource": "db",
+    "public": true
+  }
+}
