@@ -2,17 +2,22 @@
   "name": "user",
   "base": "User",
   "idInjection": true,
-  "forceId": false,
   "options": {
     "validateUpsert": true
   },
+  "forceId": false,
   "restrictResetPasswordTokenScope": true,
   "emailVerificationRequired": false,
   "properties": {
     "id": {
-      "id": true,
       "type": "string",
+      "id": true,
       "defaultFn": "uuid"
+    },
+    "isLoggedIn": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     },
     "isWatching": {
       "type": "boolean",
@@ -44,7 +49,7 @@
   },
   "acls": [
     {
-      "accessType": "READ",
+      "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"

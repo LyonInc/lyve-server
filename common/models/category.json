@@ -8,8 +8,8 @@
   },
   "properties": {
     "id": {
-      "id": true,
       "type": "string",
+      "id": true,
       "defaultFn": "uuid"
     },
     "name": {
