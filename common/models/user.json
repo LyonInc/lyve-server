@@ -15,6 +15,13 @@
       "defaultFn": "uuid"
     }
   },
+  "mixins": {
+    "TimeStamp" : {
+      "required" : false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "validations": [],
   "relations": {
     "channels": {
