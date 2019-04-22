@@ -81,5 +81,9 @@
   "subscriber": {
     "dataSource": "db",
     "public": true
+  },
+  "chat": {
+    "dataSource": "db",
+    "public": true
   }
 }
