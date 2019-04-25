@@ -13,6 +13,11 @@
     }
   },
   "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    },
     "answerNumeric": {
       "type": "string"
     },
