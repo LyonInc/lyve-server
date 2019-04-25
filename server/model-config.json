@@ -102,5 +102,29 @@
   "testanswer": {
     "dataSource": "db",
     "public": true
+  },
+  "survey": {
+    "dataSource": "db",
+    "public": true
+  },
+  "surveyquestion": {
+    "dataSource": "db",
+    "public": true
+  },
+  "surveysection": {
+    "dataSource": "db",
+    "public": true
+  },
+  "surveyoptiongroup": {
+    "dataSource": "db",
+    "public": true
+  },
+  "surveyoptionchoices": {
+    "dataSource": "db",
+    "public": true
+  },
+  "surveyquestionanswers": {
+    "dataSource": "db",
+    "public": true
   }
 }

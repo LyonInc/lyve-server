@@ -1,0 +1,39 @@
+{
+  "name": "surveyquestion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "questionText": {
+      "type": "string",
+      "required": true
+    },
+    "questionNumber": {
+      "type": "number"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "survey": {
+      "type": "belongsTo",
+      "model": "survey",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

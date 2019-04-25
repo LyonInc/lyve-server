@@ -1,0 +1,37 @@
+{
+  "name": "surveysection",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "survey": {
+      "type": "belongsTo",
+      "model": "survey",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
