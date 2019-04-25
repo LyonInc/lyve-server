@@ -90,5 +90,17 @@
   "test": {
     "dataSource": "db",
     "public": true
+  },
+  "testquestion": {
+    "dataSource": "db",
+    "public": true
+  },
+  "testoption": {
+    "dataSource": "db",
+    "public": true
+  },
+  "testanswer": {
+    "dataSource": "db",
+    "public": true
   }
 }

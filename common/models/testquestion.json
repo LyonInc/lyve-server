@@ -1,0 +1,21 @@
+{
+  "name": "testquestion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "questionText": {
+      "type": "string",
+      "required": true
+    },
+    "questionNumber": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

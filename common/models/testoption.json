@@ -1,0 +1,21 @@
+{
+  "name": "testoption",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "optionText": {
+      "type": "string",
+      "required": true
+    },
+    "isCorrectAnswer": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
