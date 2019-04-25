@@ -5,9 +5,27 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "test": {
+      "type": "belongsTo",
+      "model": "test",
+      "foreignKey": ""
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

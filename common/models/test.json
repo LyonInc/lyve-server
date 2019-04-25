@@ -5,9 +5,28 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    }
+  },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "event": {
+      "type": "belongsTo",
+      "model": "event",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

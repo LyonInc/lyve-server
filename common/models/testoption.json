@@ -5,6 +5,13 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {
     "optionText": {
       "type": "string",
@@ -15,7 +22,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "testquestion": {
+      "type": "belongsTo",
+      "model": "testquestion",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
