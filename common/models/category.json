@@ -6,6 +6,13 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -17,15 +24,15 @@
       "required": true
     }
   },
-  "mixins": {
-    "TimeStamp" : {
-      "required" : false,
-      "validateUpsert": true,
-      "silenceWarnings": false
+  "validations": [],
+  "relations": {
+    "events": {
+      "type": "hasMany",
+      "model": "event",
+      "foreignKey": "categoryId",
+      "through": "eventcategory"
     }
   },
-  "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

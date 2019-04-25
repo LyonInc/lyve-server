@@ -5,6 +5,13 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -27,19 +34,12 @@
       "required": true
     }
   },
-  "mixins": {
-    "TimeStamp" : {
-      "required" : false,
-      "validateUpsert": true,
-      "silenceWarnings": false
-    }
-  },
   "validations": [],
   "relations": {
-    "streamattachments": {
-      "type": "hasMany",
-      "model": "streamattachment",
-      "foreignKey": "streamAttachmentId"
+    "event": {
+      "type": "belongsTo",
+      "model": "event",
+      "foreignKey": ""
     }
   },
   "acls": [],

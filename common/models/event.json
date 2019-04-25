@@ -5,6 +5,13 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -43,35 +50,18 @@
       "type": "string"
     }
   },
-  "mixins": {
-    "TimeStamp" : {
-      "required" : false,
-      "validateUpsert": true,
-      "silenceWarnings": false
-    }
-  },
   "validations": [],
   "relations": {
     "channel": {
       "type": "belongsTo",
       "model": "channel",
-      "foreignKey": "channelId"
+      "foreignKey": ""
     },
     "categories": {
       "type": "hasMany",
       "model": "category",
-      "foreignKey": "categoryId",
+      "foreignKey": "eventId",
       "through": "eventcategory"
-    },
-    "streams": {
-      "type": "hasMany",
-      "model": "stream",
-      "foreignKey": "streamId"
-    },
-    "eventattachments": {
-      "type": "hasMany",
-      "model": "eventattachment",
-      "foreignKey": "eventAttachmentId"
     }
   },
   "acls": [],

@@ -5,6 +5,13 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -24,13 +31,6 @@
     },
     "birthDate": {
       "type": "date"
-    }
-  },
-  "mixins": {
-    "TimeStamp" : {
-      "required" : false,
-      "validateUpsert": true,
-      "silenceWarnings": false
     }
   },
   "validations": [],

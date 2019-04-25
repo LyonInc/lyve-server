@@ -5,6 +5,13 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -19,15 +26,15 @@
       "type": "string"
     }
   },
-  "mixins": {
-    "TimeStamp" : {
-      "required" : false,
-      "validateUpsert": true,
-      "silenceWarnings": false
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "hasMany",
+      "model": "user",
+      "foreignKey": "userId",
+      "through": "subscriber"
     }
   },
-  "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

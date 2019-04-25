@@ -1,25 +1,31 @@
 {
-  "name":"chat",
-  "base":"PersistedModel",
-  "idInjection":true,
-  "options":{
-    "validateUpsert":true
-  },
-  "properties":{
-    "message":{
-      "type":"string",
-      "required":true
-    }
+  "name": "chat",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
   },
   "mixins": {
-    "TimeStamp" : {
-      "required" : false,
+    "TimeStamp": {
+      "required": false,
       "validateUpsert": true,
       "silenceWarnings": false
     }
   },
-  "validations":[],
-  "relations":{},
-  "acls":[],
-  "methods":{}
+  "properties": {
+    "message": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "event": {
+      "type": "belongsTo",
+      "model": "event",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

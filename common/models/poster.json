@@ -5,6 +5,13 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -19,19 +26,12 @@
       "required": true
     }
   },
-  "mixins": {
-    "TimeStamp" : {
-      "required" : false,
-      "validateUpsert": true,
-      "silenceWarnings": false
-    }
-  },
   "validations": [],
   "relations": {
     "event": {
       "type": "belongsTo",
       "model": "event",
-      "foreignKey": "eventId"
+      "foreignKey": ""
     }
   },
   "acls": [],
