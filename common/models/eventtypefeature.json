@@ -1,0 +1,37 @@
+{
+  "name": "eventtypefeature",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": {
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "eventtype": {
+      "type": "belongsTo",
+      "model": "eventtype",
+      "foreignKey": "eventtypeId"
+    },
+    "feature": {
+      "type": "belongsTo",
+      "model": "feature",
+      "foreignKey": "featureId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -126,5 +126,21 @@
   "surveyquestionanswers": {
     "dataSource": "db",
     "public": true
+  },
+  "eventtype": {
+    "dataSource": "db",
+    "public": true
+  },
+  "eventfeature": {
+    "dataSource": "db",
+    "public": true
+  },
+  "eventtypefeature": {
+    "dataSource": "db",
+    "public": true
+  },
+  "feature": {
+    "dataSource": "db",
+    "public": true
   }
 }

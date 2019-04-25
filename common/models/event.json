@@ -62,6 +62,12 @@
       "model": "category",
       "foreignKey": "eventId",
       "through": "eventcategory"
+    },
+    "features": {
+      "type": "hasMany",
+      "model": "feature",
+      "foreignKey": "featureId",
+      "through": "eventfeature"
     }
   },
   "acls": [],
