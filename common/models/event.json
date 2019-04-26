@@ -29,6 +29,9 @@
       "type": "number",
       "required": true
     },
+    "cpdUnit": {
+      "type": "number"
+    },
     "timeStart": {
       "type": "date",
       "required": true
