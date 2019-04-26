@@ -8,5 +8,11 @@
     "name": "db",
     "user": "root",
     "connector": "mysql"
+  },
+  "files": {
+    "name": "files",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./storage"
   }
 }

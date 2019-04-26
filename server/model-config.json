@@ -142,5 +142,9 @@
   "feature": {
     "dataSource": "db",
     "public": true
+  },
+  "attachment": {
+    "dataSource": "files",
+    "public": true
   }
 }
