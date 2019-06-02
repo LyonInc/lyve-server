@@ -143,8 +143,12 @@
     "dataSource": "db",
     "public": true
   },
-  "attachment": {
-    "dataSource": "files",
+  "container": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "files": {
+    "dataSource": "db",
     "public": true
   }
 }

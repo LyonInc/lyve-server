@@ -24,6 +24,12 @@
     },
     "description": {
       "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "coverImage": {
+      "type": "string"
     }
   },
   "validations": [],

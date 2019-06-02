@@ -1,5 +1,5 @@
 {
-  "name": "attachment",
+  "name": "container",
   "base": "Model",
   "idInjection": true,
   "options": {
@@ -9,5 +9,5 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": []
 }

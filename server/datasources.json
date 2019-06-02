@@ -9,10 +9,11 @@
     "user": "root",
     "connector": "mysql"
   },
-  "files": {
-    "name": "files",
+  "storage": {
+    "name": "storage",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "./storage"
+    "root": "./storage",
+    "maxFileSize": "52428800"
   }
 }

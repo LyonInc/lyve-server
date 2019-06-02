@@ -31,6 +31,10 @@
     },
     "birthDate": {
       "type": "date"
+    },
+    "avatar": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
