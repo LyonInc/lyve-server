@@ -22,6 +22,10 @@
       "type": "string",
       "required": true
     },
+    "urlSlug": {
+      "type": "string",
+      "required": true
+    },
     "description": {
       "type": "string"
     },
@@ -41,6 +45,14 @@
       "through": "subscriber"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "findById"
+    }
+  ],
   "methods": {}
 }
