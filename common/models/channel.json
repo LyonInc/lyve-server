@@ -43,6 +43,11 @@
       "model": "user",
       "foreignKey": "userId",
       "through": "subscriber"
+    },
+    "events": {
+      "type": "hasMany",
+      "model": "event",
+      "foreignKey": ""
     }
   },
   "acls": [
