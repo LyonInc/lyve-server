@@ -21,10 +21,10 @@
   },
   "validations": [],
   "relations": {
-    "user": {
+    "profile": {
       "type": "belongsTo",
-      "model": "user",
-      "foreignKey": "userId"
+      "model": "profile",
+      "foreignKey": "profileId"
     },
     "channel": {
       "type": "belongsTo",

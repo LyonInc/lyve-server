@@ -24,15 +24,14 @@
   },
   "validations": [],
   "relations": {
-    "channels": {
-      "type": "hasMany",
-      "model": "channel",
-      "foreignKey": "channelId",
-      "through": "subscriber"
-    },
     "profiles": {
       "type": "hasOne",
       "model": "profile",
+      "foreignKey": "userId"
+    },
+    "channels": {
+      "type": "hasOne",
+      "model": "channel",
       "foreignKey": "userId"
     },
     "accessTokens": {
@@ -50,6 +49,13 @@
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "__get__channels"
     }
   ],
   "methods": {}

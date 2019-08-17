@@ -13,6 +13,11 @@
     }
   },
   "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    },
     "message": {
       "type": "string",
       "required": true
@@ -23,6 +28,11 @@
     "event": {
       "type": "belongsTo",
       "model": "event",
+      "foreignKey": ""
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
       "foreignKey": ""
     }
   },
