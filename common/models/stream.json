@@ -26,11 +26,11 @@
       "type": "string"
     },
     "timeStart": {
-      "type": "number",
+      "type": "date",
       "required": true
     },
     "timeEnd": {
-      "type": "number",
+      "type": "date",
       "required": true
     }
   },
