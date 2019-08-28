@@ -18,5 +18,8 @@
       "limit": "100kb"
     },
     "cors": false
+  },
+  "redis": {
+    "host": "lyve-cache.jjlkle.0001.apne1.cache.amazonaws.com"
   }
 }
