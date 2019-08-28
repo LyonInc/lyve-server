@@ -56,6 +56,13 @@
       "principalId": "$unauthenticated",
       "permission": "ALLOW",
       "property": "__get__channels"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "__get__profiles"
     }
   ],
   "methods": {}
