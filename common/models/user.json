@@ -9,9 +9,7 @@
   "restrictResetPasswordTokenScope": true,
   "emailVerificationRequired": false,
   "mixins": {
-    "mixins": {
-      "Rediscache": {}
-    },
+    "Rediscache": {},
     "TimeStamp": {
       "required": false,
       "validateUpsert": true,
