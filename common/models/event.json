@@ -45,10 +45,6 @@
       "required": true,
       "default": false
     },
-    "chatPath": {
-      "type": "string",
-      "required": true
-    },
     "imgHeaderPath": {
       "type": "string"
     }
