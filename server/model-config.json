@@ -27,7 +27,16 @@
         "model": "user",
         "foreignKey": "userId"
       }
-    }
+    },
+    "acls": [
+      {
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "ALLOW",
+        "property": "deleteById"
+      }
+    ]
   },
   "ACL": {
     "dataSource": "db",
