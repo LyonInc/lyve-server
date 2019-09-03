@@ -61,6 +61,11 @@
       "model": "stream",
       "foreignKey": ""
     },
+    "chats": {
+      "type": "hasMany",
+      "model": "chat",
+      "foreignKey": ""
+    },
     "categories": {
       "type": "hasMany",
       "model": "category",
