@@ -57,7 +57,7 @@
       "foreignKey": ""
     },
     "streams": {
-      "type": "belongsTo",
+      "type": "hasMany",
       "model": "stream",
       "foreignKey": ""
     },
