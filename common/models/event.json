@@ -56,6 +56,11 @@
       "model": "channel",
       "foreignKey": ""
     },
+    "streams": {
+      "type": "belongsTo",
+      "model": "stream",
+      "foreignKey": ""
+    },
     "categories": {
       "type": "hasMany",
       "model": "category",
