@@ -164,5 +164,9 @@
   "qa": {
     "dataSource": "db",
     "public": true
+  },
+  "qaupvote": {
+    "dataSource": "db",
+    "public": true
   }
 }
