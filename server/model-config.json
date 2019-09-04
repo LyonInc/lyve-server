@@ -160,5 +160,9 @@
   "files": {
     "dataSource": "db",
     "public": true
+  },
+  "qa": {
+    "dataSource": "db",
+    "public": true
   }
 }
