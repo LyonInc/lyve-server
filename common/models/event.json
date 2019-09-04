@@ -66,6 +66,11 @@
       "model": "chat",
       "foreignKey": ""
     },
+    "qas": {
+      "type": "hasMany",
+      "model": "qa",
+      "foreignKey": ""
+    },
     "categories": {
       "type": "hasMany",
       "model": "category",
