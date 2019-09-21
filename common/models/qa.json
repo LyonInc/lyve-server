@@ -22,11 +22,6 @@
     "question": {
       "type": "string",
       "required": true
-    },
-    "upvotes": {
-      "type": "number",
-      "required": true,
-      "default": 0
     }
   },
   "validations": [],
@@ -42,6 +37,13 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
   "methods": {}
 }
