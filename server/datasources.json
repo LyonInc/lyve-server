@@ -1,19 +1,4 @@
 {
-  "db": {
-    "host": "localhost",
-    "port": 3306,
-    "url": "",
-    "database": "lyve_server",
-    "password": "root",
-    "name": "db",
-    "user": "root",
-    "connector": "mysql"
-  },
-  "storage": {
-    "name": "storage",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./storage",
-    "maxFileSize": "52428800"
-  }
+  "db": {},
+  "storage": {}
 }

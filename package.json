@@ -13,6 +13,7 @@
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "dotenv": "^8.1.0",
     "event-stream": "^4.0.1",
     "file-extension": "^4.0.5",
     "helmet": "^3.10.0",
