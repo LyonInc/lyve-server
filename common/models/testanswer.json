@@ -12,7 +12,13 @@
       "silenceWarnings": false
     }
   },
-  "properties": {},
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    }
+  },
   "validations": [],
   "relations": {
     "test": {
