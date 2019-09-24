@@ -13,7 +13,7 @@
     }
   },
   "properties": {
-    "optionText": {
+    "text": {
       "type": "string",
       "required": true
     },
